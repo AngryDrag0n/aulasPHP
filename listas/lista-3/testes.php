@@ -64,5 +64,9 @@ echo "a soma dos numeros é $soma \n e sua média é " . $soma/10 . ": \n";
 
     $maior = 0;
     $menor = 0;
-    $numero = readline("Digite um número ")
-?>
+    $numero = 0;
+        while($menor or $maior < 0) {
+            $numero = readline("Digite um número:");
+            
+        };
+        ?>
