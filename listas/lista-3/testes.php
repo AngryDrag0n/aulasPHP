@@ -60,13 +60,26 @@ echo "a soma dos numeros é $soma \n e sua média é " . $soma/10 . ": \n";
         echo "A soma dos valores é $soma e sua media é $media"
 */
 
-/* exercicio 5 */
+/* exercicio 5 
 
-    $maior = 0;
-    $menor = 0;
-    $numero = 0;
-        while($menor or $maior < 0) {
-            $numero = readline("Digite um número:");
-            
-        };
-        ?>
+$maior = PHP_INT_MIN; 
+$menor = PHP_INT_MAX;
+
+do {
+    $a = readline("Digite um valor (se quiser encerrar digite 0): "); 
+    if ($a != 0) {
+        if ($a > $maior) {
+            $maior = $a;
+        }
+        
+        if ($a < $menor) {
+            $menor = $a;
+        }
+    }
+
+} while ($a != 0);
+
+echo "O maior número digitado foi $maior\n";
+echo "O menor número digitado foi $menor\n";*/
+
+?>
